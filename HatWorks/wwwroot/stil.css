@@ -1,0 +1,91 @@
+﻿.dataTables_length, .dataTables_info {
+    display: inline-block;
+}
+
+.dt-buttons {
+    margin-right: 10px !important;
+    display: inline-block;
+}
+
+.dataTables_filter, .dataTables_paginate {
+    display: inline-block;
+    float: right;
+}
+
+
+.dataTables_length, .dataTables_info {
+    display: inline-block;
+}
+
+
+.dataTables_wrapper .dataTables_processing {
+    border: 1px solid #ffd800 !important;
+    background: #fff68c !important;
+    height: auto !important;
+    z-index: 1000;
+}
+
+table.dataTable {
+    width: 100% !important;
+}
+
+.datepicker .table-condensed {
+    width: 100% !important;
+}
+
+.card-header, .card-title {
+    text-transform: none;
+}
+
+ul.tabs-animated li a i {
+    z-index: 10;
+}
+
+ul.tabs-animated li a.active i {
+    z-index: 10;
+    color: #fff;
+}
+
+ul.tabs-animated li a:hover i {
+    z-index: 10 !important;
+    color: #fff !important;
+}
+
+.badge {
+    text-transform: none !important;
+}
+
+
+.datepicker td, .datepicker th {
+    height: 30px;
+}
+
+#filters label {
+    font-weight: bold;
+}
+
+.fullmodal {
+    padding: 0 !important;
+    // override inline padding-right added from js
+}
+
+    .fullmodal .modal-dialog {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        margin: 0;
+    }
+
+    .fullmodal .modal-content {
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .fullmodal .modal-body {
+        overflow-y: auto;
+    }
+
+.logo-src {
+    cursor: pointer;
+}
