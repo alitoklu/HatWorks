@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace HatWorks.Controllers
 {
-    [Authorize]
-    public class HomeController : Controller
+    public class accountController : Controller
     {
-        public IActionResult Index()
+        [AllowAnonymous]
+        public IActionResult login()
         {
+
             return View();
         }
     }

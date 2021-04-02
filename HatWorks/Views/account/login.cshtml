@@ -1,0 +1,253 @@
+﻿@{ Layout = null; }
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Widex | Login</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Widex High Defination Hearing">
+    <meta name="robots" content="noindex" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link href="/main.css" rel="stylesheet">
+    <link href="~/assets/toastr/toastr.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow">
+        <div class="app-container">
+            <div class="h-100">
+                <div class="h-100 no-gutters row">
+                    <div class="d-none d-lg-block col-lg-4">
+                        <div class="slider-light">
+                            <div class="slick-slider">
+                                <div>
+                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-plum-plate" tabindex="-1">
+                                        <div class="slide-img-bg" style="background-image: url('/assets/images/evoke-hearing-widex.jpg');"></div>
+                                        <div class="slider-content">
+                                            <h3>ARKANIZA YASLANMAK İSTEDİĞİNİZDE</h3>
+                                            <p>
+                                                Bazı kişiler kendi işitme deneyimlerini yönlendirmek istemezler.<br /><br />
+
+                                                Arkanıza yaslanmak istediğinizde, Evrensel programı deneyin. EVOKE bu programda çalışırken, içerdiği Akışta Ses Analizörünü ve Denetleyicisini, bir otomatik pilot gibi kullanarak, gereksinimlerinize ve bulunduğunuz ortama göre otomatik ayarlanır.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    @*<div class="position-relative h-100 d-flex justify-content-center align-items-center bg-premium-dark" tabindex="-1">
+                                            <div class="slide-img-bg" style="background-image: url('/assets/images/tv-play-hearing-devices-widex-1600x540.jpg');"></div>
+                                            <div class="slider-content">
+                                                <h3>
+                                                    TELEVİZYONDAKİ ÖNEMLİ ANLAR EN İYİ SESİ HAKEDER
+                                                </h3>
+                                                <p>
+                                                    Televizyonda ister haberleri izleyin, ister film seyredin, TV PLAY televizyonun sesini daha iy duymanızı sağlar.</p><p>
+
+                                                    TV PLAY istediğinizi seyrederken, seyrettiğinizi işitme cihazınızdan duymanızı sağlar. TV PLAY, patent başvurusunda bulunduğumuz, ikili anten teknolojisiyle maksimum aktarım istikrarı sağlar ve siz de TV'deki hiç bir anı kaçırmazsınız.
+                                                </p>
+                                            </div>
+                                        </div>*@
+                                </div>
+                                @*<div>
+                                        <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-sunny-morning" tabindex="-1">
+                                            <div class="slide-img-bg" style="background-image: url('assets/images/originals/citydark.jpg');"></div>
+                                            <div class="slider-content">
+                                                <h3>Complex, but lightweight</h3>
+                                                <p>We've included a lot of components that cover almost all use cases for any type of application.</p>
+                                            </div>
+                                        </div>
+                                    </div>*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-100 d-flex bg-white justify-content-center align-items-center col-md-12 col-lg-8">
+                        <div class="mx-auto app-login-box col-sm-12 col-md-10 col-lg-9">
+                            <div class="app-logo"><img src="/assets/images/logo-inverse.png" /></div>
+                            <h4 class="mb-0">
+                                <span class="d-block">
+                                    High Defination Hearing
+                                </span>
+                            </h4>
+                            @*<h6 class="mt-3">No account? <a href="javascript:void(0);" class="text-primary">Sign up now</a></h6>*@
+                            <div class="divider row"></div>
+                            <div>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <div class="position-relative form-group">
+                                            <label for="exampleEmail" class="">Kullanıcı Adı</label>
+                                            <input name="Kullancı Adı" id="loginemail" placeholder="Kullanıcı adı ya da e-posta..." type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="position-relative form-group">
+                                            <label for="examplePassword" class="">Şifre</label>
+                                            <input name="password" id="loginpassword" placeholder="Şifre giriniz.." type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-between">
+                                    <div class="position-relative form-check">
+                                        <input name="check" id="exampleCheck" type="checkbox" class="form-check-input">
+                                        <label for="exampleCheck" class="form-check-label">Beni Hatırla</label>
+                                    </div>
+                                    <a href="javascript:;" class="btn-lg btn btn-link passwordremember" style="padding:0;">Şifremi Hatırlat</a>
+                                </div>
+                                <div class="divider row"></div>
+                                <div class="d-flex align-items-center">
+                                    <div class="ml-auto">
+                                        <button class="btn btn-primary btn-lg" id="btnlogin">Giriş Yap</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="position:absolute; bottom:10px; margin:0 auto;">
+                            <a href="http://creamobile.com" target="_blank">
+                                <img src="http://creamobile.com/uploads/domainfiles/creamobile.com/logo.png" alt="creamobile" style="height: 10px">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/scripts/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="~/assets/scripts/main.js"></script>
+    <script src="~/assets/scripts/scripts.js"></script>
+    <script src="~/assets/toastr/toastr.min.js"></script>
+    <script>$(document).ready(function () {
+            $("#loginemail,#loginpassword").keypress(function (event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if (keycode == '13') {
+                    $("#btnlogin").trigger("click");
+                }
+            });
+
+
+
+            $("#btnlogin").click(function () {
+                if ($("#loginemail").val().trim() == "") {
+                    jq_alert("Geçerli kullanıcı adı veya e-posta giriniz");
+                    return false;
+                }
+
+                if ($("#loginpassword").val().trim() == "") {
+                    jq_alert("Şifre giriniz");
+                    return false;
+                }
+                loader.start();
+                $.ajax({
+                    type: "POST",
+                    url: "/account/login",
+                    data: JSON.stringify({ "username": $("#loginemail").val().trim(), "password": $("#loginpassword").val().trim() }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.result.status) {
+                            window.location = "/Home/Index"
+                        }
+                        else {
+                            console.log(data.result.message)
+                            jq_alert(data.result.message);
+                        }
+                    }
+                    , complete: function () {
+                        loader.stop();
+                    }
+                });
+            });
+        });
+
+        $(".passwordremember").click(function () {
+            jq_dialog("Şifre Hatırlat", $("#formpasswordremember").html(), function () {
+
+            },
+                function () {
+
+                    if ($("#emailusername").val().trim() == "") {
+                        return false;
+                    }
+                    loader.start();
+                    $.ajax({
+                        type: "POST",
+                        url: "/account/passwordremember",
+                        data: JSON.stringify({ "email": $("#emailusername").val().trim() }),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (msg) {
+                            var jsondata = msg;
+                            if (jsondata.status) {
+                                utilities.onscreen(utilities.dil_ceviri("Kullanıcı bilgileri gönderildi.", "kayit_basarili"));
+                                $('#confirmmodal').modal("toggle");
+                                return true;
+                            }
+                            else {
+
+                                jq_alert("Kullanıcı bulunamadı!");
+                            }
+                        }
+                        , complete: function () {
+                            loader.stop();
+                        }
+                    });
+
+                }
+                , "lg");
+        });</script>
+    <script type="text/template" id="formpasswordremember">
+        <div class="form-group">
+            <label class="col-4 float-left">E-Posta / Kullanıcı Adı</label>
+            <input class="form-control col-8" data-type="string" placeholder="Kayıtlı e-mail veya kullanıcı adınızı giriniz." id="emailusername" />
+        </div>
+    </script>
+
+
+    <div class="modal fade" id="alertmodal" role="dialog" style="z-index:2000">
+        <div class="modal-dialog shadow">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default alertmodelclose" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="confirmmodal" role="dialog">
+        <div class="modal-dialog shadow">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default alertmodelclose" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
